@@ -1,0 +1,37 @@
+
+  body::before {
+  position: fixed;
+  top: 3px;
+  left: 3px;
+  z-index: 1000;
+  padding: 1ch;
+  background: rgba(0, 0, 0, 0.55);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9375rem; }
+  @media screen and (max-width: 35.60938em) {
+    body::before {
+      content: "Breakpoint: small"; } }
+  @media screen and (min-width: 35.625em) and (max-width: 61.23438em) {
+    body::before {
+      content: "Breakpoint: medium"; } }
+  @media screen and (min-width: 61.25em) and (max-width: 78.73438em) {
+    body::before {
+      content: "Breakpoint: large"; } }
+  @media screen and (min-width: 78.75em) and (max-width: 93.73438em) {
+    body::before {
+      content: "Breakpoint: xlarge"; } }
+  @media screen and (min-width: 93.75em) {
+    body::before {
+      content: "Breakpoint: xxlarge"; } }
+  
+  /* DONT DELETE */
+  .custom-inner-band {
+  position: relative;
+  padding: 1.0rem 1.25rem; }
+  @media screen and (min-width: 61.25em) {
+    .custom-inner-band {
+      padding: 1.0rem 1.875rem; } }
+  @media screen and (min-width: 79.375em) {
+    .custom-inner-band {
+      padding-top: 1.0rem 2.5rem; } }
