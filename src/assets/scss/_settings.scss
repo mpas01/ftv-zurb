@@ -101,9 +101,14 @@ $global-prototype-breakpoints: false;
 $global-button-cursor: pointer;
 $global-color-pick-contrast-tolerance: 0;
 $print-transparent-backgrounds: true;
-
 @include add-foundation-colors;
-
+$global-margin: 1rem;
+$global-padding: 1rem;
+$global-weight-light: 300;
+$global-weight-normal: 400;
+$global-weight-medium: 500;
+$global-weight-bold: 700;
+$global-weight-black: 900;
 // 2. Breakpoints
 // --------------
 

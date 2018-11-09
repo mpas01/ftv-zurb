@@ -1,0 +1,61 @@
+{{!-- This is the base layout for full width sbl pages --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <meta name="abstract" content="{{ abstract }}" />
+    <meta name="keywords" content="{{ keywords }}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@Lombard Exteriors" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta name="twitter:title" content="{{ title }}"/>
+    <meta name="Description" content="{{ description }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta name="twitter:description" content="{{ description }}" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{{ image }}" />
+    <meta name="twitter:image" content="{{ image }}" />
+    <meta property="og:url" content="{{ url }}" />
+    <meta name="theme-color" content="#88BD45">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/css/app-lombard.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <style type="text/css">
+      .logo { padding-top: 10px; }  
+      .financeNeeds h3{  color: #88BD45;  }           
+      
+     .box-line {
+       border: 2px solid #CECECE;
+       border-top-width:0; 
+       position: absolute; 
+       top: 0; 
+       left: 0; 
+       height: 224px;
+       width: 100%;
+     }      
+    </style>
+  </head>
+  <body>
+  <div class="show-for-print">Lombard Exteriors</div>
+  <header id="header-nav" class="hide-for-print"> 
+
+      {{> lombard-nav}}
+  </header>
+  
+    {{> body}}
+
+
+    <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"><\/'+'script>')</script>
+    <script>window.jQuery || document.write('<script src="{{root}}/js/vendor/jquery-3.2.1.min.js"><\/'+'script>')</script>
+    <!--<script src="app_mf_sbl.js"></script>-->
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>
